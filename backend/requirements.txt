@@ -1,0 +1,33 @@
+aniso8601==9.0.1
+attrs @ file:///tmp/build/80754af9/attrs_1620827162558/work
+click==8.0.3
+fastcache @ file:///opt/concourse/worker/volumes/live/8356601f-d9bc-4d13-4017-1a58ebea6849/volume/fastcache_1607571270986/work
+filelock @ file:///tmp/build/80754af9/filelock_1635402558181/work
+flake8 @ file:///tmp/build/80754af9/flake8_1620776156532/work
+Flask==2.1.2
+Flask-JWT-Extended==4.4.1
+flask-restx==0.5.1
+Flask-SQLAlchemy==2.5.1
+greenlet @ file:///opt/concourse/worker/volumes/live/b27b4e9e-4697-4d57-403b-f82d36a391ca/volume/greenlet_1628888146890/work
+itsdangerous @ file:///tmp/build/80754af9/itsdangerous_1621432558163/work
+Jinja2==3.1.2
+jinja2-time @ file:///tmp/build/80754af9/jinja2-time_1617751524098/work
+jsonschema @ file:///Users/ktietz/demo/mc3/conda-bld/jsonschema_1630511932244/work
+MarkupSafe==2.1.1
+matplotlib @ file:///opt/concourse/worker/volumes/live/f670ab63-e220-495e-450b-14c9591f195b/volume/matplotlib-suite_1634667037960/work
+matplotlib-inline @ file:///tmp/build/80754af9/matplotlib-inline_1628242447089/work
+PyJWT @ file:///opt/concourse/worker/volumes/live/bd094316-1935-4bf0-5028-b889d4e7967c/volume/pyjwt_1619682501859/work
+pylint @ file:///opt/concourse/worker/volumes/live/110f293a-445f-477b-4041-2e00ae784083/volume/pylint_1627536795404/work
+pyrsistent @ file:///opt/concourse/worker/volumes/live/76cffa60-bd33-4155-4e83-ea03c38b1294/volume/pyrsistent_1636111020441/work
+PySocks @ file:///opt/concourse/worker/volumes/live/112288ac-9cb0-4e73-768b-13baf4ca6419/volume/pysocks_1605305820043/work
+pytest==6.2.4
+python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
+python-decouple==3.6
+pytz==2021.3
+sip==4.19.13
+six @ file:///tmp/build/80754af9/six_1623709665295/work
+spyder @ file:///opt/concourse/worker/volumes/live/5ce630f9-babe-4f53-755a-cd7324c300d9/volume/spyder_1636480249527/work
+spyder-kernels @ file:///opt/concourse/worker/volumes/live/72f0c5be-8b9e-43d2-67e5-f038915937d7/volume/spyder-kernels_1634236950410/work
+SQLAlchemy @ file:///opt/concourse/worker/volumes/live/454d700c-0b8b-469e-7add-023d0df6ee3d/volume/sqlalchemy_1626948440911/work
+Werkzeug @ file:///tmp/build/80754af9/werkzeug_1635505089296/work
+zstandard==0.15.2
