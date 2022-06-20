@@ -7,14 +7,14 @@ from flask_migrate import Migrate
 from flask_jwt_extended import JWTManager
 from recipes import recipe_ns
 from auth import auth_ns
-# from flask_cors import CORS
+from flask_cors import CORS
 
 def create_app(config):
     app=Flask(__name__,static_url_path='/',static_folder='./client/build')
     # config param can hold either DevConfig,ProdConfig or TestConfig(UATConfig,OATConfig) values
     app.config.from_object(config)
 
-    # CORS(app)
+    CORS(app)
 
     # registers SQL_ALCHEMY to work with our application
     db.init_app(app)
