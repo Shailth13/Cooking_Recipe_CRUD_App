@@ -1,19 +1,4 @@
 from exts import db
-from sqlalchemy.orm import registry
-
-"""data model
-
-class Recepie:
-    ind:int primary key
-    name:str
-    ingredients:str(text)
-    instructions:str(text)
-    serving_size:str(text)
-    category:str(text)
-    notes:str(text)
-    date_added:str(text)
-    date_modified:str(text)
-"""
 class Recipe(db.Model):
     id=db.Column(db.Integer(),primary_key=True)
     name=db.Column(db.String(),nullable=False)
@@ -49,15 +34,6 @@ class Recipe(db.Model):
         db.session.commit()
 
 # expose this model using the serializer on our API
-
-"""Login User Model
-
-class User:
-    id=int primary key
-    username=string
-    email=string
-    password=text
-"""
 
 class User(db.Model):
     id=db.Column(db.Integer,primary_key=True)
