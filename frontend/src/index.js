@@ -1,22 +1,29 @@
-import React, { useEffect, useState } from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './styles/index.css'
+import React from 'react'
 import ReactDOM from 'react-dom'
-import axios from 'axios'
+import NavBar from './components/Navbar'
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import HomePage from './components/Home'
+import SignUpPage from './components/SignUp'
+import SignInPage from './components/SignIn'
+import CreateRecipePage from './components/CreateRecipe'
+import NoMatch from './components/NoMatch'
 
 const App = () => {
-  const [message, setMessage] = useState('')
-
-  useEffect(() => {
-    axios
-      .request('/recipe/fetch')
-      .then((response) => {
-        console.log(response.data)
-        setMessage(response.data.message)
-      })
-      .catch((err) => {
-        console.log('error: ' + err)
-      })
-  }, [])
-  return <div className='app'>{message}</div>
+  return (
+    <BrowserRouter>
+      <NavBar />
+      <Routes>
+        <Route path='/create_recipe' element={<CreateRecipePage />} />
+        <Route path='/signin' element={<SignInPage />} />
+        <Route path='/signup' element={<SignUpPage />} />
+        <Route path='/' element={<HomePage />} />
+        <Route path='*' element={<NoMatch />} />
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
 ReactDOM.render(<App />, document.getElementById('root'))
