@@ -10,3 +10,9 @@ Frontend Stack
 * React Components with react hooks
 * JWT Authentication for User Login
 * Unit testing using RTL - in progress
+
+
+Steps to run the app:
+1) Setup flask environment and should have SQLite
+2) run backend : project_name backend $python run.py
+3) run frontend : project_name frontend $yarn start
