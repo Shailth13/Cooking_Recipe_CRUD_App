@@ -2,6 +2,7 @@ from flask_restx import Namespace,Resource,fields
 from models import Recipe
 from flask_jwt_extended import jwt_required
 from flask import request
+import datetime
 
 
 recipe_ns=Namespace('recipe',description="A namespace for Recipes")
@@ -56,8 +57,8 @@ class CookingRecipes(Resource):
             serving_size=data.get('serving_size'),
             category=data.get('category'),
             notes=data.get('notes'),
-            date_added=data.get('date_added'),
-            date_modified=data.get('date_modified'),
+            date_added=datetime.datetime.now(),
+            date_modified='',
         )
 
         new_recipe.save()
@@ -90,7 +91,7 @@ class CookingRecipes(Resource):
         mod_data=request.get_json()
         # for update operation we will not use or allow date_added to be part of request object or query object.
         #date_added is created by default by the model system at time of creation of the recipe just like id.
-        recipe_to_update.update(mod_data.get('name'),mod_data.get('ingredients'),mod_data.get('instructions'),mod_data.get('serving_size'),mod_data.get('category'),mod_data.get('notes'),mod_data.get('date_modified'))
+        recipe_to_update.update(mod_data.get('name'),mod_data.get('ingredients'),mod_data.get('instructions'),mod_data.get('serving_size'),mod_data.get('category'),mod_data.get('notes'),datetime.datetime.now())
 
         #lets test it in insomnia using new put request update_a_recipe. here date modified should take in system date time to reflect the current time of update operation.
 
