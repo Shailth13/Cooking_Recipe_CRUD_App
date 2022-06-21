@@ -44,12 +44,12 @@ const SignOutRoutes = () => {
       </li>
       <li className='nav-item'>
         <Link className='nav-link active' to='/signup'>
-          SignUp
+          Sign Up
         </Link>
       </li>
       <li className='nav-item'>
         <Link className='nav-link active' to='/signin'>
-          SignIn
+          Sign In
         </Link>
       </li>
     </>

@@ -4,6 +4,8 @@ import { useAuth } from '../auth'
 import Recipe from '../components/RecipeCard'
 import { Modal, Form, Button } from 'react-bootstrap'
 import { useForm } from 'react-hook-form'
+import IconButton from '@mui/material/IconButton'
+import './components.css'
 
 const LoggedinHome = () => {
   const [recipeList, setRecipes] = useState([])
@@ -241,7 +243,7 @@ const LoggedinHome = () => {
 const LoggedOutHome = () => {
   return (
     <div className='home container'>
-      <h1 className='heading'>Welcome to the Recipes</h1>
+      <h1 className='heading'>Start using your personal Cook Book.</h1>
       <Link to='/signup' className='btn btn-primary btn-lg'>
         Get Started
       </Link>

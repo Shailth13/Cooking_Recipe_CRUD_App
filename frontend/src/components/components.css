@@ -11,7 +11,7 @@
   font-size: 32px;
 }
 
-.fa-gear {
+.fa-pen {
   color: rgb(25, 25, 153);
   font-size: 32px;
 }
@@ -19,6 +19,12 @@
 .fa-floppy-disk {
   color: rgb(25, 153, 38);
   font-size: 32px;
+}
+
+.fa-forward {
+  color: #b83636;
+  transition: all 0.3s ease-out;
+  transform: translateX(10px) scale(0) rotateX(0deg);
 }
 
 .logout {
@@ -33,4 +39,8 @@
   flex-direction: row;
   justify-content: flex-end;
   align-items: end;
+}
+
+.nav-item {
+  padding: 0px 10px 0px 10px;
 }
