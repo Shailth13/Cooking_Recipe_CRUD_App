@@ -34,7 +34,7 @@ const Recipe = ({ recipeData, onClick, onDelete }) => {
         </div>
         <div className='controlElements'>
           <IconButton onClick={onClick}>
-            <i className='fa-solid fa-gear'></i>
+            <i className='fa-solid fa-pen'></i>
           </IconButton>
 
           <IconButton onClick={onDelete}>
